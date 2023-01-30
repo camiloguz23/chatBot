@@ -1,0 +1,38 @@
+.containerItem {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+
+    .bodyMessage {
+        display: flex;
+        align-items: center;
+        width: 70%;
+
+        i {
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+
+        span{
+            background-color: #3377FF;
+            max-width: 80%;
+            padding: 6px 20px;
+            border-radius: 20px;
+            white-space: break-spaces;
+        }
+
+        .robot {
+            font-family: 'Chakra Petch', sans-serif;
+
+        }
+
+        .userText {
+            font-family: 'Gloria Hallelujah', cursive;
+        }
+    }
+
+    .user {
+        justify-content: end;
+        width: 100%;
+    }
+}

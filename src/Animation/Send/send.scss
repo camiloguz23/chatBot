@@ -1,0 +1,26 @@
+.animationSend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .text {
+        overflow: hidden;
+        width: 0px;
+        animation-name: move;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        text-align: center;
+        color: white;
+
+    }
+
+    .icon {
+        color: white;
+    }
+}
+
+@keyframes move {
+    100%{width: 10%;}
+}

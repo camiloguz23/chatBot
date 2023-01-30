@@ -1,0 +1,33 @@
+@mixin loginAndLink {
+    color: white;
+    border: none;
+    padding: 0.25rem 1.25rem;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+    }
+
+    &:hover {
+
+        &::before {
+            animation-name: line;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            border: solid 1px white;
+        }
+    }
+
+
+}
+
+@keyframes line {
+    0% {width: 0;}
+    100%{width: 60%;}
+}

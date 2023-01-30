@@ -1,0 +1,16 @@
+@import "../../style/mixin.scss";
+
+.links {
+    text-decoration: none;
+    @include loginAndLink;
+
+}
+
+.active {
+
+    &::before {
+        content: "";
+        border: solid 1px white;
+        width: 60%;
+    }
+}
